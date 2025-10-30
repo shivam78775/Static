@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DeployEase Test</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/a2e0e9e76d.js" crossorigin="anonymous"></script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: linear-gradient(135deg, #1e1f29 0%, #232946 100%);
+        color: #fff;
+        overflow: hidden;
+        position: relative;
+        padding: 2rem;
+      }
+
+      /* Abstract gradient shapes */
+      .bg-shape {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(100px);
+        opacity: 0.4;
+      }
+      .bg1 {
+        width: 400px;
+        height: 400px;
+        background: #6c63ff;
+        top: -100px;
+        left: -100px;
+      }
+      .bg2 {
+        width: 350px;
+        height: 350px;
+        background: #ff6584;
+        bottom: -100px;
+        right: -100px;
+      }
+
+      /* Glass card */
+      .card {
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(16px);
+        border-radius: 25px;
+        padding: 2.5rem;
+        max-width: 700px;
+        text-align: center;
+        z-index: 10;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      }
+
+      .icon {
+        font-size: 4rem;
+        color: #6c63ff;
+        margin-bottom: 1rem;
+        animation: float 3s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-15px); }
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+        color: #ffffff;
+      }
+
+      .author {
+        font-size: 2rem;
+        font-weight: 900;
+        background: linear-gradient(90deg, #6c63ff, #ff6584);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: 1px;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        color: #cfd2f6;
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .section {
+        text-align: left;
+        margin-top: 1.5rem;
+      }
+
+      .section h2 {
+        color: #ff6584;
+        font-size: 1.4rem;
+        margin-bottom: 0.6rem;
+        border-left: 4px solid #6c63ff;
+        padding-left: 0.5rem;
+      }
+
+      .section ul {
+        list-style: none;
+        padding-left: 0.8rem;
+      }
+
+      .section ul li {
+        padding: 0.3rem 0;
+        font-size: 1rem;
+      }
+
+      .section ul li i {
+        color: #6c63ff;
+        margin-right: 0.6rem;
+      }
+
+      .credit {
+        margin-top: 2rem;
+        font-size: 0.9rem;
+        color: #aaa;
+      }
+
+      .credit span {
+        color: #6c63ff;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bg-shape bg1"></div>
+    <div class="bg-shape bg2"></div>
+
+    <div class="card">
+      <i class="fas fa-rocket icon"></i>
+      <h1>🚀 DeployEase is Working!</h1>
+      <div class="author">Made by Shivam Rathore</div>
+      <p>Effortless deployment from your CLI — deploy faster, smarter, and easier with DeployEase.</p>
+
+      <div class="section">
+        <h2><i class="fas fa-bolt"></i> Features</h2>
+        <ul>
+          <li><i class="fas fa-code-branch"></i> Instant Git-based deployment</li>
+          <li><i class="fas fa-lock"></i> Secure token-based authentication</li>
+          <li><i class="fas fa-sync-alt"></i> Automatic version syncing</li>
+          <li><i class="fas fa-terminal"></i> Command-line simplicity</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2><i class="fas fa-lightbulb"></i> Upcoming Features</h2>
+        <ul>
+          <li><i class="fas fa-chart-line"></i> Real-time deployment analytics</li>
+          <li><i class="fas fa-database"></i> Integrated database sync</li>
+          <li><i class="fas fa-users-cog"></i> Team collaboration dashboard</li>
+          <li><i class="fas fa-brain"></i> AI-based optimization suggestions</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2><i class="fas fa-terminal"></i> Common CLI Commands</h2>
+        <ul>
+          <li><i class="fas fa-play"></i> <b>deployease init</b> — Initialize your project</li>
+          <li><i class="fas fa-cloud-upload-alt"></i> <b>deployease push</b> — Push and deploy your build</li>
+          <li><i class="fas fa-list"></i> <b>deployease status</b> — View deployment history</li>
+          <li><i class="fas fa-trash"></i> <b>deployease remove</b> — Remove a deployed project</li>
+        </ul>
+      </div>
+
+      <div class="credit">
+        Crafted with ❤️ by <span>Shivam Rathore</span> | v1.0
+      </div>
+    </div>
+  </body>
+</html>
