@@ -1,0 +1,12 @@
+{
+  "repoName": "Static",
+  "repoUrl": "https://github.com/shivam78775/Static.git",
+  "deployDir": ".",
+  "createdAt": "2025-11-01T06:41:36.752Z",
+  "features": [
+    "Automatic GitHub Pages deployment",
+    "Global accessibility",
+    "Auto branch creation (gh-pages)",
+    "Smart deploy directory detection"
+  ]
+}
